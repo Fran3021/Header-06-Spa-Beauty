@@ -1,0 +1,178 @@
+.main-principal{
+    .image-hero{
+        position: absolute;
+        z-index: -1;
+        width: 70%;
+        left: 25%;
+        top: 0;
+        @include breakpoint(desktopxxl){
+            top: 5%;
+        }
+    }
+    .container-main{
+        display: flex;
+        .hero-left{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            width: 50%;
+            .title-hero{
+                font-size: 50px;
+                color: $blue;
+                font-weight: bold;
+                width: 80%;
+                @include breakpoint(desktopxxl){
+                    font-size: 64px;
+                }
+            }
+            .description-hero{
+                font-size: 20px;
+                color: $silver;
+                font-weight: normal;
+                width: 80%;
+                @include breakpoint(desktopxxl){
+                    font-size: 24px;
+                    width: 85%;
+                }
+            }
+            .buttons-hero{
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                margin-bottom: 30px;
+                @include breakpoint(desktopxxl){
+                    gap: 60px;
+                }
+                .button{
+                    @include button;
+                }
+                .video{
+                    display: flex;
+                    align-items: center;
+                    .watch{
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        gap: 15px;
+                        align-items: center;
+                        @include breakpoint(desktopxxl){
+                            font-size: 18px;
+                        }
+                        &:hover{
+                            color: $silver;
+                        }
+                        .play{
+                            padding: 10px;
+                            border-radius: 90px;
+                            background-color: $white;
+                            box-shadow: 20px 25px 90px $blue;
+                        }
+                    }
+                }
+            }
+            .features{
+                display: flex;
+                justify-content: center;
+                background-color: $white;
+                gap: 20px;
+                padding-top: 20px;
+                width: 70%;
+                .items{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    img{
+                        width: 72px;
+                        height: 72px;
+                    }
+                    span{
+                        font-size: 30px;
+                        font-weight: 500;
+                        color: $blue;
+                        @include breakpoint(desktopxxl){
+                            font-size: 36px;
+                        }
+                    }
+                    p{
+                        font-size: 15px;
+                        font-weight: normal;
+                        color: $silver;
+                        width: 70%;
+                        text-align: center;
+                        @include breakpoint(desktopxxl){
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+        .hero-right{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            .options-1{
+                backdrop-filter: blur(8px);
+                background-color: rgba(255, 255, 255, 0.4);
+                width: 40%;
+                padding: 30px;
+                border-radius: 15px;
+                margin-left: 50%;
+                margin-top: 10%;
+                @include breakpoint(desktopxxl){
+                    width: 45%;
+                    margin-top: 20%;
+                }
+                img{
+                    width: 10%;
+                }
+                p{
+                    font-size: 14px;
+                    color: $black;
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
+                }
+                h3{
+                    font-size: 15px;
+                    color: $blue;
+                    font-weight: bold;
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
+                }
+            }
+            .options-2{
+                backdrop-filter: blur(8px);
+                background-color: rgba(255, 255, 255, 0.4);
+                width: 40%;
+                padding: 30px;
+                border-radius: 15px;
+                margin-left: 30%;
+                @include breakpoint(desktopxxl){
+                    width: 45%;
+                }
+                img{
+                    width: 10%;
+                }
+                p{
+                    font-size: 14px;
+                    color: $black;
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
+                }
+                h3{
+                    font-size: 15px;
+                    color: $blue;
+                    font-weight: bold;
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

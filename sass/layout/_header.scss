@@ -1,0 +1,98 @@
+.header-principal{
+    padding-top: 20px;
+    margin-bottom: 90px;
+    .container-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            font-size: 30px;
+            font-weight: 600;
+            color: $blue;
+            @include breakpoint(desktopxxl){
+                font-size: 36px;
+            }
+            span{
+                color: $silver-light;
+                font-size: 30px;
+                font-weight: 600;
+                @include breakpoint(desktopxxl){
+                    font-size: 36px;
+                }
+            }
+        }
+        .menu-header{
+            ul{
+                display: flex;
+                gap: 30px;
+                align-items: center;
+                @include breakpoint(desktopxxl){
+                    gap: 56px;
+                }
+                a{
+                    text-decoration: none;
+                    color:$blue;
+                    font-size: 15px;
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
+                    &:hover{
+                        color: $silver;
+                    }
+                }
+                .menu{
+                    position: relative;
+                    display: flex;
+                    color: $blue;
+                    padding: 10px;
+                    align-items: center;
+                    gap: 10px;
+                    @include breakpoint(desktopxxl){
+                        padding: 20px;
+                        font-size: 18px;
+                    }
+                    &:hover{
+                        cursor: pointer;
+                        color: $silver;
+                        .menu-dropdown{
+                            visibility: visible;
+                            opacity: 1;
+                        }
+                    }
+                    .menu-dropdown{
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: visibility 1s ease, opacity 1s ease;
+                    }
+                }
+            }
+        }
+        .icons-login-header{
+            ul{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                .no-button{
+                    color: $blue;
+                    font-size: 15px;
+                    margin-left: 40px;
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
+                }
+                .button{
+                    @include button;
+                }
+            }
+        }
+    }
+}
+
+
+

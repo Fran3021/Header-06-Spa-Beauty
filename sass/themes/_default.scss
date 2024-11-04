@@ -1,0 +1,11 @@
+body {
+    position: relative;
+    overflow-x: hidden;
+    background-image: url(../../img/background-hero.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+} 
+
+html * {
+    font-family: $poppins;
+}

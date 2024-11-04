@@ -1,0 +1,112 @@
+<!--Obligatorio para que el navegador lo lea perfecto en lenguaje HTML-->
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!--Aqui el titulo para los buscadores-->
+  <title> Project 7 - Spa & Beauty</title>
+  
+  <!--Descripcion que sale al buscarlo en el navegador-->
+  <meta name="description" content="project7">
+
+  <!--Palabras claves para los buscadores en navegadores-->
+  <meta name="keywords" content="project7">
+
+  <!--Autor de la pagina-->
+  <meta name="autor" content="Fran">
+
+  <!--Añadimos la hoja de estilo CSS o SASS-->
+  <script defer type="module" src="/main.js"></script>
+
+  <!--Favicon de la pagina(icono)-->
+  <link rel="icon" href="/vite.svg" type="image/x-icon">
+
+  <!--Codificacion-->
+  <meta charset="UTF-8">
+
+  <!--Para que la web sea resposinve(El tamaño segun el dispositivo)-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Para algunos navegadores moviles(Color parte de arriba del HEADER)-->
+  <meta name="theme-color" content="FF0000">
+</head>
+
+<body>
+    <header class="header-principal">
+      <div class="container-header">
+        <h1>Glow<span>Queen</span></h1>
+        <nav class="menu-header">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Facilities</a></li>
+            <li class="menu">More<img src="icons/icon-arrow-down.svg" alt="">
+              <ul class="menu-dropdown">
+                <li><a href="#">Images</a></li>
+                <li><a href="#">Options</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <nav class="icons-login-header">
+          <ul>
+            <li><a href="#"><img src="icons/icon-search.svg" alt=""></a></li>
+            <li><a href="#"><img src="icons/icon-shopping.svg" alt=""></a></li>
+            <li><a class="no-button" href="#">Sign In</a></li>
+            <li><a class="button" href="#">Sign Up</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-principal">
+      <img class="image-hero" src="img/image-hero-woman.svg" alt="">
+      <div class="container-main">
+        <div class="hero-left">
+          <h2 class="title-hero">Bring back the beauty and glow of your skin</h2>
+          <p class="description-hero">We provide you various treatments from head to toe using the best product, advanced technology, and affordable price
+          </p>
+          <ul class="buttons-hero">
+            <li><a class="button" href="#">Book Now</a></li>
+            <li class="video"><a class="watch" href="#"><img class="play" src="icons/icon-play.svg" alt="">Watch Video</a></li>
+          </ul>
+          <div class="features">
+            <article class="items">
+              <img src="icons/icon-special.svg" alt="">
+              <span>15+</span>
+              <p>Special Treatment</p>
+            </article>
+            <article class="items">
+              <img src="icons/icon-professional.svg" alt="">
+              <span>25+</span>
+              <p>Professional Therapist</p>
+            </article>
+            <article class="items">
+              <img src="icons/icon-herbal.svg" alt="">
+              <span>100%</span>
+              <p>Herbal Cream Formula</p>
+            </article>
+          </div>
+        </div>
+        <div class="hero-right">
+          <article class="options-1">
+            <img src="icons/icon-comillas.svg" alt="">
+            <p>I have a regular schedule to take treatment from GlowQueen, they gave me the best service and treatment ever to maintain the beauty and health of my skin</p>
+            <h3>Sophia Princeton</h3>
+          </article>
+          <article class="options-2">
+            <img src="icons/icon-comillas.svg" alt="">
+            <p>For the past few years, I've had a hard time finding the right place for skin care to deal with my complicated skin condition, thank God I found GlowQueen to treat my skin</p>
+            <h3>Tamara Jules</h3>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer> 
+
+    </footer>
+  </section>
+</body>
+</html>
+
