@@ -1,9 +1,17 @@
-@import './abstracts/abstracts';
-@import './vendors/vendors';
-@import './base/base';
-@import './components/components';
-@import './layout/layout';
-@import './pages/pages';
-@import './themes/themes';
-@import 'settings';
+@use './layout/_container';
+@use './layout/_footer';
+@use './layout/_forms';
+@use './layout/_grid';
+@use './layout/_header';
+@use './layout/_main';
+@use './layout/_navbar';
+@use './layout/_sidebar';
+@use './themes/themes';
+
+// Development mode
+// if development mode is set to true, then the following things apply:
+// When a site is ready to go live, change it to false, and make sure you
+// populate any relevant variables such as the grid classes
+$dev-mode: true;
+
 

@@ -1,3 +1,8 @@
+@use '../abstracts/abstracts' as abs;
+@use '../components/components' as comp;
+@use '../base/base' as base;
+
+
 .main-principal{
     .image-hero{
         position: absolute;
@@ -5,7 +10,7 @@
         width: 70%;
         left: 25%;
         top: 0;
-        @include breakpoint(desktopxxl){
+        @include abs.breakpoint(desktopxxl){
             top: 5%;
         }
     }
@@ -18,19 +23,19 @@
             width: 50%;
             .title-hero{
                 font-size: 50px;
-                color: $blue;
+                color: abs.$blue;
                 font-weight: bold;
                 width: 80%;
-                @include breakpoint(desktopxxl){
+                @include abs.breakpoint(desktopxxl){
                     font-size: 64px;
                 }
             }
             .description-hero{
                 font-size: 20px;
-                color: $silver;
+                color: abs.$silver;
                 font-weight: normal;
                 width: 80%;
-                @include breakpoint(desktopxxl){
+                @include abs.breakpoint(desktopxxl){
                     font-size: 24px;
                     width: 85%;
                 }
@@ -40,11 +45,11 @@
                 align-items: center;
                 gap: 40px;
                 margin-bottom: 30px;
-                @include breakpoint(desktopxxl){
+                @include abs.breakpoint(desktopxxl){
                     gap: 60px;
                 }
                 .button{
-                    @include button;
+                    @include comp.button;
                 }
                 .video{
                     display: flex;
@@ -55,17 +60,17 @@
                         text-decoration: none;
                         gap: 15px;
                         align-items: center;
-                        @include breakpoint(desktopxxl){
+                        @include abs.breakpoint(desktopxxl){
                             font-size: 18px;
                         }
                         &:hover{
-                            color: $silver;
+                            color: abs.$silver;
                         }
                         .play{
                             padding: 10px;
                             border-radius: 90px;
-                            background-color: $white;
-                            box-shadow: 20px 25px 90px $blue;
+                            background-color: abs.$white;
+                            box-shadow: 20px 25px 90px abs.$blue;
                         }
                     }
                 }
@@ -73,7 +78,7 @@
             .features{
                 display: flex;
                 justify-content: center;
-                background-color: $white;
+                background-color: abs.$white;
                 gap: 20px;
                 padding-top: 20px;
                 width: 70%;
@@ -90,18 +95,18 @@
                     span{
                         font-size: 30px;
                         font-weight: 500;
-                        color: $blue;
-                        @include breakpoint(desktopxxl){
+                        color: abs.$blue;
+                        @include abs.breakpoint(desktopxxl){
                             font-size: 36px;
                         }
                     }
                     p{
                         font-size: 15px;
                         font-weight: normal;
-                        color: $silver;
+                        color: abs.$silver;
                         width: 70%;
                         text-align: center;
-                        @include breakpoint(desktopxxl){
+                        @include abs.breakpoint(desktopxxl){
                             font-size: 18px;
                         }
                     }
@@ -121,7 +126,7 @@
                 border-radius: 15px;
                 margin-left: 50%;
                 margin-top: 10%;
-                @include breakpoint(desktopxxl){
+                @include abs.breakpoint(desktopxxl){
                     width: 45%;
                     margin-top: 20%;
                 }
@@ -130,16 +135,16 @@
                 }
                 p{
                     font-size: 14px;
-                    color: $black;
-                    @include breakpoint(desktopxxl){
+                    color: abs.$black;
+                    @include abs.breakpoint(desktopxxl){
                         font-size: 18px;
                     }
                 }
                 h3{
                     font-size: 15px;
-                    color: $blue;
+                    color: abs.$blue;
                     font-weight: bold;
-                    @include breakpoint(desktopxxl){
+                    @include abs.breakpoint(desktopxxl){
                         font-size: 18px;
                     }
                 }
@@ -151,7 +156,7 @@
                 padding: 30px;
                 border-radius: 15px;
                 margin-left: 30%;
-                @include breakpoint(desktopxxl){
+                @include abs.breakpoint(desktopxxl){
                     width: 45%;
                 }
                 img{
@@ -159,16 +164,16 @@
                 }
                 p{
                     font-size: 14px;
-                    color: $black;
-                    @include breakpoint(desktopxxl){
+                    color: abs.$black;
+                    @include abs.breakpoint(desktopxxl){
                         font-size: 18px;
                     }
                 }
                 h3{
                     font-size: 15px;
-                    color: $blue;
+                    color: abs.$blue;
                     font-weight: bold;
-                    @include breakpoint(desktopxxl){
+                    @include abs.breakpoint(desktopxxl){
                         font-size: 18px;
                     }
                 }
