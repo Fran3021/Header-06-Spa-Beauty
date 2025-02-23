@@ -6,7 +6,7 @@
 @use './layout/_main';
 @use './layout/_navbar';
 @use './layout/_sidebar';
-@use './themes/themes';
+@use './layout/_default';
 
 // Development mode
 // if development mode is set to true, then the following things apply:
